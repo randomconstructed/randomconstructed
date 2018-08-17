@@ -1,6 +1,6 @@
 # Random Constructed
 
-Constructed magic got boring when net decking became possible... Random Constructed is a format that makes constructed interesting again.
+Constructed magic got boring when net decking (looking up well tested decks online) became possible... Random Constructed is a format that makes constructed interesting again.
 
 Every week, 3 random sets are picked from which to construct decks and battle. The Bitcoin Cash blockchain is used as a source of unbiased randomness.
 
