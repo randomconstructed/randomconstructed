@@ -1,7 +1,9 @@
-import pandas
-import requests
-from datetime import datetime, time, date, timedelta
+import csv
 import calendar
+import requests
+from datetime import datetime, time, timedelta
+
+print('Querying Bitcoin Cash blockchain to get random sets...')
 
 # find the last Sunday (this Sunday if the time is after 4 and today is Sunday)
 dt = datetime.utcnow()
@@ -14,8 +16,15 @@ while d.weekday() != calendar.SUNDAY:
 last_sunday = d
 
 # read in the list of mtg sets
-sets = pandas.read_csv('sets.csv')
-n = len(sets)
+set_codes = []
+set_names = []
+with open('sets.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    next(readCSV)
+    for row in readCSV:
+        set_codes.append(row[1])
+        set_names.append(row[2])
+n = len(set_codes)
 
 # get the block hash of the first block mined on the Bitcoin Cash blockchain after noon last Sunday
 h = None
@@ -49,9 +58,9 @@ if third >= max(first, second):
     third += 1
 
 # get the set codes of the picked sets
-selected = sets[sets['Set No'].isin([first, second, third])]
-print(selected)
-c = list(selected['Code'])
+codes = [set_codes[i] for i in [first, second, third]]
+names = [set_names[i] for i in [first, second, third]]
 
 # print the link to view the cards allowed for this week (min 60 card deck, max 4 of each card)
-print('https://scryfall.com/search?order=color&q=e%3A{}+or+e%3A{}+or+e%3A{}'.format(c[0], c[1], c[2]))
+print('The allowed sets are:', names)
+print('See https://scryfall.com/search?order=color&q=e%3A{}+or+e%3A{}+or+e%3A{} to view the allowed cards.'.format(codes[0], codes[1], codes[2]))
