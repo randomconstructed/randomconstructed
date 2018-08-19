@@ -62,5 +62,5 @@ codes = [set_codes[i] for i in [first, second, third]]
 names = [set_names[i] for i in [first, second, third]]
 
 # print the link to view the cards allowed for this week (min 60 card deck, max 4 of each card)
-print('The allowed sets are:', names)
-print('See https://scryfall.com/search?order=color&q=e%3A{}+or+e%3A{}+or+e%3A{} to view the allowed cards.'.format(codes[0], codes[1], codes[2]))
+print('The allowed sets are:\n', names)
+print('You can view the pool of cards here:\nhttps://scryfall.com/search?order=color&q=e%3A{}+or+e%3A{}+or+e%3A{}'.format(codes[0], codes[1], codes[2]))
