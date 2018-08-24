@@ -5,15 +5,18 @@ from datetime import datetime, time, timedelta
 
 print('Querying Bitcoin Cash blockchain to get random sets...')
 
-# find the last Sunday (this Sunday if the time is after 4 and today is Sunday)
+# day of the week that new sets are generated (default Sunday)
+GENDAY = calendar.SUNDAY
+
+# find the last generation day (today if the time is after 4 and today is the generation day)
 dt = datetime.utcnow()
 t = dt.time()
 d = dt.date()
-if not(d.weekday() == calendar.SUNDAY and t >= time(16)):
+if not(d.weekday() == GENDAY and t >= time(13)):
     d -= timedelta(days=1)
-while d.weekday() != calendar.SUNDAY:
+while d.weekday() != GENDAY:
     d -= timedelta(days=1)
-last_sunday = d
+last_genday = d
 
 # read in the list of mtg sets
 set_codes = []
@@ -26,9 +29,9 @@ with open('sets.csv') as csvfile:
         set_names.append(row[2])
 n = len(set_codes)
 
-# get the block hash of the first block mined on the Bitcoin Cash blockchain after noon last Sunday
+# get the block hash of the first block mined on the Bitcoin Cash blockchain after noon last generation day
 h = None
-r = requests.get('https://bch-chain.api.btc.com/v3/block/date/{}'.format(str(last_sunday).replace('-', ''))).json()
+r = requests.get('https://bch-chain.api.btc.com/v3/block/date/{}'.format(str(last_genday).replace('-', ''))).json()
 for block in reversed(r['data']):
     t = datetime.utcfromtimestamp(block['timestamp']).time()
     if t >= time(12):
