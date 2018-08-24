@@ -1,12 +1,12 @@
-import csv
+# day of the week that new sets are generated (default Sunday)
 import calendar
+GENDAY = calendar.SUNDAY
+
+import csv
 import requests
 from datetime import datetime, time, timedelta
 
 print('Querying Bitcoin Cash blockchain to get random sets...')
-
-# day of the week that new sets are generated (default Sunday)
-GENDAY = calendar.SUNDAY
 
 # find the last generation day (today if the time is after 4 and today is the generation day)
 dt = datetime.utcnow()
