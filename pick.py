@@ -12,7 +12,7 @@ print('Querying Bitcoin Cash blockchain to get random sets...')
 dt = datetime.utcnow()
 t = dt.time()
 d = dt.date()
-if not(d.weekday() == GENDAY and t >= time(13)):
+if not(d.weekday() == GENDAY and t >= time(16)):
     d -= timedelta(days=1)
 while d.weekday() != GENDAY:
     d -= timedelta(days=1)
@@ -66,4 +66,4 @@ names = [set_names[i] for i in [first, second, third]]
 
 # print the link to view the cards allowed for this week (min 60 card deck, max 4 of each card)
 print('The allowed sets are:\n', names)
-print('You can view the pool of cards here:\nhttps://scryfall.com/search?order=color&q=e%3A{}+or+e%3A{}+or+e%3A{}'.format(codes[0], codes[1], codes[2]))
+print('You can view the pool of cards here:\nhttps://scryfall.com/search?order=usd&q=e%3A{}+or+e%3A{}+or+e%3A{}'.format(codes[0], codes[1], codes[2]))
