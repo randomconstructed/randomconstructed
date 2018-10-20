@@ -1,3 +1,4 @@
+import argparse
 import calendar
 import csv
 import requests
@@ -8,6 +9,12 @@ GEN_DAY = calendar.SUNDAY
 # time on the generation day to generate new sets (default 4pm)
 GEN_HR = time(16)
 DEFAULT_SETS_PATH = 'sets.csv'
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--file', default=DEFAULT_SETS_PATH)
+
+args = parser.parse_args()
+csv_path = args.file
 
 
 def get_last_gen_day():
@@ -71,7 +78,7 @@ def generate_set_indices(h, n):
         second += 1
     # remove the last digit in base n-1
     x = int(x / (n-1))
-
+    
     # pick the third set taking the last digit of the previous step in base n-2
     third = x % (n-2)
     # these 'ifs' are the same as removing the first and second picked sets from the list of sets
@@ -84,7 +91,7 @@ def generate_set_indices(h, n):
 
 def get_set_codes_and_names():
     last_gen_day = get_last_gen_day()
-    set_codes, set_names, num_sets = read_sets_csv(DEFAULT_SETS_PATH)
+    set_codes, set_names, num_sets = read_sets_csv(csv_path)
     print('Querying Bitcoin Cash blockchain to get random sets...')
     block_hash = get_block_hash(last_gen_day)
     first, second, third = generate_set_indices(block_hash, num_sets)
