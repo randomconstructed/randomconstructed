@@ -1,44 +1,63 @@
-# day of the week that new sets are generated (default Sunday)
 import calendar
-GENDAY = calendar.SUNDAY
-
 import csv
 import requests
 from datetime import datetime, time, timedelta
 
-print('Querying Bitcoin Cash blockchain to get random sets...')
+# day of the week that new sets are generated (default Sunday)
+GEN_DAY = calendar.SUNDAY
+# time on the generation day to generate new sets (default 4pm)
+GEN_HR = time(16)
+DEFAULT_SETS_PATH = 'sets.csv'
 
-def get_set_codes_and_names():
-    # find the last generation day (today if the time is after 4 and today is the generation day)
+
+def get_last_gen_day():
+    """Finds and returns the last day the codes were generated"""
     dt = datetime.utcnow()
-    t = dt.time()
-    d = dt.date()
-    if not(d.weekday() == GENDAY and t >= time(16)):
-        d -= timedelta(days=1)
-    while d.weekday() != GENDAY:
-        d -= timedelta(days=1)
-    last_genday = d
+    time = dt.time()
+    date = dt.date()
+    is_generation_day = date.weekday() == GEN_DAY and time >= GEN_HR
+    if not is_generation_day:
+        date -= timedelta(days=1)
+    while date.weekday() != GEN_DAY:
+        date -= timedelta(days=1)
+    return date
 
-    # read in the list of mtg sets
+
+def read_sets_csv(path):
+    """Reads a CSV of sets, returns the set codes, names and number of sets"""
+    # TODO: ensure CSV matches correct format
     set_codes = []
     set_names = []
-    with open('sets.csv') as csvfile:
+    with open(path) as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         next(readCSV)
         for row in readCSV:
             set_codes.append(row[1])
             set_names.append(row[2])
-    n = len(set_codes)
+    num_sets = len(set_codes)
+    return set_codes, set_names, num_sets
 
-    # get the block hash of the first block mined on the Bitcoin Cash blockchain after noon last generation day
+
+def get_block_hash(date):
+    """Gets and returns the block has of the first block mined on the Bitcoin
+    Cash blockchain after noon last generation day
+    """
     h = None
-    r = requests.get('https://bch-chain.api.btc.com/v3/block/date/{}'.format(str(last_genday).replace('-', ''))).json()
-    for block in reversed(r['data']):
+    response = requests.get(
+        'https://bch-chain.api.btc.com/v3/block/date/{}'.format(
+            str(date).replace('-', '')
+            )
+        ).json()
+    for block in reversed(response['data']):
         t = datetime.utcfromtimestamp(block['timestamp']).time()
         if t >= time(12):
             h = block['hash']
             break
+    return h
 
+
+def generate_set_indices(h, n):
+    """Returns three numbers within number of set for use in selecting sets"""
     # pick the first set taking the last digit of the hash in base n
     x = int(h, 16)
     first = x % n-1
@@ -60,6 +79,15 @@ def get_set_codes_and_names():
         third += 1
     if third >= max(first, second):
         third += 1
+    return first, second, third
+
+
+def get_set_codes_and_names():
+    last_gen_day = get_last_gen_day()
+    set_codes, set_names, num_sets = read_sets_csv(DEFAULT_SETS_PATH)
+    print('Querying Bitcoin Cash blockchain to get random sets...')
+    block_hash = get_block_hash(last_gen_day)
+    first, second, third = generate_set_indices(block_hash, num_sets)
 
     # get the set codes of the picked sets
     codes = [set_codes[i] for i in [first, second, third]]
