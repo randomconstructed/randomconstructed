@@ -1,96 +1,101 @@
 Set No,Code,Name,Cards,URL
 0,2ED,Unlimited Edition,302,https://scryfall.com/sets/2ed
-1,ARN,Arabian Nights,92,https://scryfall.com/sets/arn
+1,ARN,Arabian Nights,78,https://scryfall.com/sets/arn
 2,ATQ,Antiquities,100,https://scryfall.com/sets/atq
 3,3ED,Revised Edition,306,https://scryfall.com/sets/3ed
 4,LEG,Legends,310,https://scryfall.com/sets/leg
-5,DRK,The Dark,119,https://scryfall.com/sets/drk
-6,FEM,Fallen Empires,187,https://scryfall.com/sets/fem
-7,4ED,Fourth Edition,378,https://scryfall.com/sets/4ed
-8,ICE,Ice Age,383,https://scryfall.com/sets/ice
-9,HML,Homelands,140,https://scryfall.com/sets/hml
-10,ALL,Alliances,199,https://scryfall.com/sets/all
-11,MIR,Mirage,350,https://scryfall.com/sets/mir
-12,VIS,Visions,167,https://scryfall.com/sets/vis
-13,WTH,Weatherlight,167,https://scryfall.com/sets/wth
-14,5ED,Fifth Edition,449,https://scryfall.com/sets/5ed
-15,TMP,Tempest,350,https://scryfall.com/sets/tmp
-16,STH,Stronghold,143,https://scryfall.com/sets/sth
-17,EXO,Exodus,143,https://scryfall.com/sets/exo
-18,USG,Urza’s Saga,350,https://scryfall.com/sets/usg
-19,ULG,Urza’s Legacy,143,https://scryfall.com/sets/ulg
-20,UDS,Urza’s Destiny,143,https://scryfall.com/sets/uds
-21,6ED,Sixth Edition ,350,https://scryfall.com/sets/6ed
-22,MMQ,Mercadian Masques,350,https://scryfall.com/sets/mmq
-23,NEM,Nemesis,143,https://scryfall.com/sets/nem
-24,PCY,Prophecy,143,https://scryfall.com/sets/pcy
-25,INV,Invasion,350,https://scryfall.com/sets/inv
-26,PLS,Planeshift,146,https://scryfall.com/sets/pls
-27,7ED,Seventh Edition,350,https://scryfall.com/sets/7ed
-28,APC,Apocalypse,143,https://scryfall.com/sets/apc
-29,ODY,Odyssey,350,https://scryfall.com/sets/ody
-30,TOR,Torment,143,https://scryfall.com/sets/tor
-31,JUD,Judgment,143,https://scryfall.com/sets/jud
-32,ONS,Onslaught,350,https://scryfall.com/sets/ons
-33,LGN,Legions,145,https://scryfall.com/sets/lgn
-34,SCG,Scourge,143,https://scryfall.com/sets/scg
-35,8ED,Eighth Edition,357,https://scryfall.com/sets/8ed
-36,MRD,Mirrodin,306,https://scryfall.com/sets/mrd
-37,DST,Darksteel,165,https://scryfall.com/sets/dst
-38,5DN,Fifth Dawn,165,https://scryfall.com/sets/5dn
-39,CHK,Champions of Kamigawa,307,https://scryfall.com/sets/chk
-40,BOK,Betrayers of Kamigawa,165,https://scryfall.com/sets/bok
-41,SOK,Saviors of Kamigawa,165,https://scryfall.com/sets/sok
-42,9ED,Ninth Edition,359,https://scryfall.com/sets/9ed
-43,RAV,Ravnica: City of Guilds,306,https://scryfall.com/sets/rav
-44,GPT,Guildpact,165,https://scryfall.com/sets/gpt
-45,DIS,Dissension,180,https://scryfall.com/sets/dis
-46,CSP,Coldsnap,155,https://scryfall.com/sets/csp
-47,TSP,Time Spiral,301,https://scryfall.com/sets/tsp
-48,PLC,Planar Chaos,165,https://scryfall.com/sets/plc
-49,FUT,Future Sight,180,https://scryfall.com/sets/fut
-50,10E,Tenth Edition,508,https://scryfall.com/sets/10e
-51,LRW,Lorwyn,301,https://scryfall.com/sets/lrw
-52,MOR,Morningtide,150,https://scryfall.com/sets/mor
-53,SHM,Shadowmoor,301,https://scryfall.com/sets/shm
-54,EVE,Eventide,180,https://scryfall.com/sets/eve
-55,ALA,Shards of Alara,249,https://scryfall.com/sets/ala
-56,CON,Conflux,145,https://scryfall.com/sets/con
-57,ARB,Alara Reborn,145,https://scryfall.com/sets/arb
-58,M10,Magic 2010,249,https://scryfall.com/sets/m10
-59,ZEN,Zendikar,269,https://scryfall.com/sets/zen
-60,WWK,Worldwake,145,https://scryfall.com/sets/wwk
-61,ROE,Rise of the Eldrazi,248,https://scryfall.com/sets/roe
-62,M11,Magic 2011,249,https://scryfall.com/sets/m11
-63,SOM,Scars of Mirrodin,249,https://scryfall.com/sets/som
-64,MBS,Mirrodin Besieged,155,https://scryfall.com/sets/mbs
-65,NPH,New Phyrexia,175,https://scryfall.com/sets/nph
-66,M12,Magic 2012,249,https://scryfall.com/sets/m12
-67,ISD,Innistrad,264,https://scryfall.com/sets/isd
-68,DKA,Dark Ascension,158,https://scryfall.com/sets/dka
-69,AVR,Avacyn Restored,244,https://scryfall.com/sets/avr
-70,M13,Magic 2013,249,https://scryfall.com/sets/m13
-71,RTR,Return to Ravnica,274,https://scryfall.com/sets/rtr
-72,GTC,Gatecrash,249,https://scryfall.com/sets/gtc
-73,DGM,Dragon's Maze,156,https://scryfall.com/sets/dgm
-74,M14,Magic 2014,249,https://scryfall.com/sets/m14
-75,THS,Theros,249,https://scryfall.com/sets/ths
-76,BNG,Born of the Gods,165,https://scryfall.com/sets/bng
-77,JOU,Journey into Nyx,165,https://scryfall.com/sets/jou
-78,M15,Magic 2015,284,https://scryfall.com/sets/m15
-79,KTK,Khans of Tarkir,269,https://scryfall.com/sets/ktk
-80,FRF,Fate Reforged,185,https://scryfall.com/sets/frf
-81,DTK,Dragons of Tarkir,264,https://scryfall.com/sets/dtk
-82,ORI,Magic Origins,288,https://scryfall.com/sets/ori
-83,BFZ,Battle For Zendikar,299,https://scryfall.com/sets/bfz
-84,OGW,Oath of the Gatewatch,186,https://scryfall.com/sets/ogw
-85,SOI,Shadows Over Innistrad,297,https://scryfall.com/sets/soi
-86,EMN,Eldritch Moon,208,https://scryfall.com/sets/emn
-87,KLD,Kaladesh,274,https://scryfall.com/sets/kld
-88,AER,Aether Revolt,194,https://scryfall.com/sets/aer
-89,AKH,Amonkhet,287,https://scryfall.com/sets/akh
-90,HOU,Hour of Devastation,209,https://scryfall.com/sets/hou
-91,XLN,Ixalan,289,https://scryfall.com/sets/xln
-92,RIX,Rivals of Ixalan,205,https://scryfall.com/sets/rix
-93,DOM,Dominaria,280,https://scryfall.com/sets/dom
-94,M19,Core Set 2019,314,https://scryfall.com/sets/m19
+5,SUM,Summer Magic / Edgar,306,https://scryfall.com/sets/sum
+6,DRK,The Dark,119,https://scryfall.com/sets/drk
+7,FEM,Fallen Empires,187,https://scryfall.com/sets/fem
+8,FBB,Foreign Black Border,307,https://scryfall.com/sets/fbb
+9,4ED,Fourth Edition,378,https://scryfall.com/sets/4ed
+10,ICE,Ice Age,383,https://scryfall.com/sets/ice
+11,HML,Homelands,140,https://scryfall.com/sets/hml
+12,ALL,Alliances,199,https://scryfall.com/sets/all
+13,MIR,Mirage,350,https://scryfall.com/sets/mir
+14,VIS,Visions,167,https://scryfall.com/sets/vis
+15,5ED,Fifth Edition,449,https://scryfall.com/sets/5ed
+16,WTH,Weatherlight,167,https://scryfall.com/sets/wth
+17,TMP,Tempest,350,https://scryfall.com/sets/tmp
+18,STH,Stronghold,143,https://scryfall.com/sets/sth
+19,EXO,Exodus,143,https://scryfall.com/sets/exo
+20,USG,Urza's Saga,350,https://scryfall.com/sets/usg
+21,ULG,Urza's Legacy,143,https://scryfall.com/sets/ulg
+22,6ED,Classic Sixth Edition,350,https://scryfall.com/sets/6ed
+23,UDS,Urza's Destiny,143,https://scryfall.com/sets/uds
+24,MMQ,Mercadian Masques,350,https://scryfall.com/sets/mmq
+25,NEM,Nemesis,143,https://scryfall.com/sets/nem
+26,PCY,Prophecy,143,https://scryfall.com/sets/pcy
+27,INV,Invasion,350,https://scryfall.com/sets/inv
+28,PLS,Planeshift,146,https://scryfall.com/sets/pls
+29,7ED,Seventh Edition,350,https://scryfall.com/sets/7ed
+30,APC,Apocalypse,143,https://scryfall.com/sets/apc
+31,ODY,Odyssey,350,https://scryfall.com/sets/ody
+32,TOR,Torment,143,https://scryfall.com/sets/tor
+33,JUD,Judgment,143,https://scryfall.com/sets/jud
+34,ONS,Onslaught,350,https://scryfall.com/sets/ons
+35,LGN,Legions,145,https://scryfall.com/sets/lgn
+36,SCG,Scourge,143,https://scryfall.com/sets/scg
+37,8ED,Eighth Edition,357,https://scryfall.com/sets/8ed
+38,MRD,Mirrodin,306,https://scryfall.com/sets/mrd
+39,DST,Darksteel,165,https://scryfall.com/sets/dst
+40,5DN,Fifth Dawn,165,https://scryfall.com/sets/5dn
+41,CHK,Champions of Kamigawa,307,https://scryfall.com/sets/chk
+42,BOK,Betrayers of Kamigawa,165,https://scryfall.com/sets/bok
+43,SOK,Saviors of Kamigawa,165,https://scryfall.com/sets/sok
+44,9ED,Ninth Edition,359,https://scryfall.com/sets/9ed
+45,RAV,Ravnica: City of Guilds,306,https://scryfall.com/sets/rav
+46,GPT,Guildpact,165,https://scryfall.com/sets/gpt
+47,DIS,Dissension,180,https://scryfall.com/sets/dis
+48,CSP,Coldsnap,155,https://scryfall.com/sets/csp
+49,TSP,Time Spiral,301,https://scryfall.com/sets/tsp
+50,TSB,Time Spiral Timeshifted,121,https://scryfall.com/sets/tsb
+51,PLC,Planar Chaos,165,https://scryfall.com/sets/plc
+52,FUT,Future Sight,180,https://scryfall.com/sets/fut
+53,10E,Tenth Edition,508,https://scryfall.com/sets/10e
+54,LRW,Lorwyn,301,https://scryfall.com/sets/lrw
+55,MOR,Morningtide,150,https://scryfall.com/sets/mor
+56,SHM,Shadowmoor,301,https://scryfall.com/sets/shm
+57,EVE,Eventide,180,https://scryfall.com/sets/eve
+58,ALA,Shards of Alara,249,https://scryfall.com/sets/ala
+59,CON,Conflux,145,https://scryfall.com/sets/con
+60,ARB,Alara Reborn,145,https://scryfall.com/sets/arb
+61,M10,Magic 2010,249,https://scryfall.com/sets/m10
+62,ZEN,Zendikar,269,https://scryfall.com/sets/zen
+63,WWK,Worldwake,145,https://scryfall.com/sets/wwk
+64,ROE,Rise of the Eldrazi,248,https://scryfall.com/sets/roe
+65,M11,Magic 2011,249,https://scryfall.com/sets/m11
+66,SOM,Scars of Mirrodin,249,https://scryfall.com/sets/som
+67,MBS,Mirrodin Besieged,155,https://scryfall.com/sets/mbs
+68,NPH,New Phyrexia,175,https://scryfall.com/sets/nph
+69,M12,Magic 2012,249,https://scryfall.com/sets/m12
+70,ISD,Innistrad,264,https://scryfall.com/sets/isd
+71,DKA,Dark Ascension,158,https://scryfall.com/sets/dka
+72,AVR,Avacyn Restored,244,https://scryfall.com/sets/avr
+73,M13,Magic 2013,249,https://scryfall.com/sets/m13
+74,RTR,Return to Ravnica,274,https://scryfall.com/sets/rtr
+75,GTC,Gatecrash,249,https://scryfall.com/sets/gtc
+76,DGM,Dragon's Maze,156,https://scryfall.com/sets/dgm
+77,M14,Magic 2014,249,https://scryfall.com/sets/m14
+78,THS,Theros,249,https://scryfall.com/sets/ths
+79,BNG,Born of the Gods,165,https://scryfall.com/sets/bng
+80,JOU,Journey into Nyx,165,https://scryfall.com/sets/jou
+81,M15,Magic 2015,284,https://scryfall.com/sets/m15
+82,KTK,Khans of Tarkir,269,https://scryfall.com/sets/ktk
+83,FRF,Fate Reforged,185,https://scryfall.com/sets/frf
+84,DTK,Dragons of Tarkir,264,https://scryfall.com/sets/dtk
+85,ORI,Magic Origins,288,https://scryfall.com/sets/ori
+86,BFZ,Battle for Zendikar,299,https://scryfall.com/sets/bfz
+87,OGW,Oath of the Gatewatch,186,https://scryfall.com/sets/ogw
+88,SOI,Shadows over Innistrad,297,https://scryfall.com/sets/soi
+89,EMN,Eldritch Moon,208,https://scryfall.com/sets/emn
+90,KLD,Kaladesh,274,https://scryfall.com/sets/kld
+91,AER,Aether Revolt,194,https://scryfall.com/sets/aer
+92,AKH,Amonkhet,287,https://scryfall.com/sets/akh
+93,HOU,Hour of Devastation,209,https://scryfall.com/sets/hou
+94,XLN,Ixalan,289,https://scryfall.com/sets/xln
+95,RIX,Rivals of Ixalan,205,https://scryfall.com/sets/rix
+96,DOM,Dominaria,280,https://scryfall.com/sets/dom
+97,M19,Core Set 2019,314,https://scryfall.com/sets/m19
+98,GRN,Guilds of Ravnica,273,https://scryfall.com/sets/grn
+99,RNA,Ravnica Allegiance,273,https://scryfall.com/sets/rna
