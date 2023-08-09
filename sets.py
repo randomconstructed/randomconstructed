@@ -3,16 +3,16 @@ import requests
 import json
 
 SET_LIST_URL = 'https://api.scryfall.com/sets'
-SET_TYPE_WHITELIST = ['expansion', 'core']
-SET_CODE_BLACKLIST = ['LEA', 'LEB', 'SUM', 'FBB', 'TSB']
+SET_TYPE_ALLOWLIST = ['expansion', 'core']
+SET_CODE_DENYLIST = ['LEA', 'LEB', 'SUM', 'FBB', 'TSB']
 SET_CSV_FILE = 'sets.csv'
 
 def get_latest_set_list():
     r = requests.get(SET_LIST_URL).json()
     all_mtg_sets = r['data']
     whitelisted_sets = list(filter(lambda x:
-                                   x['set_type'] in SET_TYPE_WHITELIST and
-                                   x['code'].upper() not in SET_CODE_BLACKLIST,
+                                   x['set_type'] in SET_TYPE_ALLOWLIST and
+                                   x['code'].upper() not in SET_CODE_DENYLIST,
                                    all_mtg_sets))
     whitelisted_sets.reverse()  # from oldest to newest
     return whitelisted_sets
