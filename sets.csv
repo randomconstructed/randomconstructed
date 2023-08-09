@@ -1,6 +1,6 @@
 Set No,Code,Name,Cards,URL
 0,2ED,Unlimited Edition,302,https://scryfall.com/sets/2ed
-1,ARN,Arabian Nights,92,https://scryfall.com/sets/arn
+1,ARN,Arabian Nights,78,https://scryfall.com/sets/arn
 2,ATQ,Antiquities,100,https://scryfall.com/sets/atq
 3,3ED,Revised Edition,306,https://scryfall.com/sets/3ed
 4,LEG,Legends,310,https://scryfall.com/sets/leg
@@ -12,15 +12,15 @@ Set No,Code,Name,Cards,URL
 10,ALL,Alliances,199,https://scryfall.com/sets/all
 11,MIR,Mirage,350,https://scryfall.com/sets/mir
 12,VIS,Visions,167,https://scryfall.com/sets/vis
-13,WTH,Weatherlight,167,https://scryfall.com/sets/wth
-14,5ED,Fifth Edition,449,https://scryfall.com/sets/5ed
+13,5ED,Fifth Edition,449,https://scryfall.com/sets/5ed
+14,WTH,Weatherlight,167,https://scryfall.com/sets/wth
 15,TMP,Tempest,350,https://scryfall.com/sets/tmp
 16,STH,Stronghold,143,https://scryfall.com/sets/sth
 17,EXO,Exodus,143,https://scryfall.com/sets/exo
-18,USG,Urza’s Saga,350,https://scryfall.com/sets/usg
-19,ULG,Urza’s Legacy,143,https://scryfall.com/sets/ulg
-20,UDS,Urza’s Destiny,143,https://scryfall.com/sets/uds
-21,6ED,Sixth Edition ,350,https://scryfall.com/sets/6ed
+18,USG,Urza's Saga,350,https://scryfall.com/sets/usg
+19,ULG,Urza's Legacy,143,https://scryfall.com/sets/ulg
+20,6ED,Classic Sixth Edition,350,https://scryfall.com/sets/6ed
+21,UDS,Urza's Destiny,143,https://scryfall.com/sets/uds
 22,MMQ,Mercadian Masques,350,https://scryfall.com/sets/mmq
 23,NEM,Nemesis,143,https://scryfall.com/sets/nem
 24,PCY,Prophecy,143,https://scryfall.com/sets/pcy
@@ -82,9 +82,9 @@ Set No,Code,Name,Cards,URL
 80,FRF,Fate Reforged,185,https://scryfall.com/sets/frf
 81,DTK,Dragons of Tarkir,264,https://scryfall.com/sets/dtk
 82,ORI,Magic Origins,288,https://scryfall.com/sets/ori
-83,BFZ,Battle For Zendikar,299,https://scryfall.com/sets/bfz
+83,BFZ,Battle for Zendikar,299,https://scryfall.com/sets/bfz
 84,OGW,Oath of the Gatewatch,186,https://scryfall.com/sets/ogw
-85,SOI,Shadows Over Innistrad,297,https://scryfall.com/sets/soi
+85,SOI,Shadows over Innistrad,297,https://scryfall.com/sets/soi
 86,EMN,Eldritch Moon,208,https://scryfall.com/sets/emn
 87,KLD,Kaladesh,274,https://scryfall.com/sets/kld
 88,AER,Aether Revolt,194,https://scryfall.com/sets/aer
@@ -94,3 +94,5 @@ Set No,Code,Name,Cards,URL
 92,RIX,Rivals of Ixalan,205,https://scryfall.com/sets/rix
 93,DOM,Dominaria,280,https://scryfall.com/sets/dom
 94,M19,Core Set 2019,314,https://scryfall.com/sets/m19
+95,GRN,Guilds of Ravnica,273,https://scryfall.com/sets/grn
+96,RNA,Ravnica Allegiance,273,https://scryfall.com/sets/rna
